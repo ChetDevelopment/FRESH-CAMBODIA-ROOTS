@@ -147,7 +147,7 @@ main .p {
 }
 
 .tabels p {
-    font-size: 26px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -195,7 +195,8 @@ main .p {
 
 }
 
-.year {
+.year,
+.year2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,10 +204,26 @@ main .p {
     height: 25px;
     border: 1px solid gray;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     position: absolute;
     left: 570px;
+    color: #2d9a51;
+}
+
+.year1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 100px;
+    color: #2d9a51;
 }
 
 .pro {
@@ -215,17 +232,19 @@ main .p {
     gap: 10px;
 }
 
-
+.pro p {
+    color: rgba(128, 128, 128, 0.518);
+}
 
 .last-main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 300px;
+    height: 350px;
     width: 90%;
     gap: 10px;
-    background-color: #1eb650;
+    background: linear-gradient(135deg, #f89c23, #f68f36);
     margin-bottom: 20px;
     margin-left: 80px;
     border-radius: 20px;
@@ -239,7 +258,7 @@ main .p {
 
 .footer-icon {
     display: inline-block;
-    font-size: 70px;
+    font-size: 50px;
     color: white;
     animation: leafMove 2s infinite ease-in-out;
 }
@@ -283,9 +302,47 @@ main .p {
 
 .last-main a:hover {
     background-color: orange;
-    transition: 0.5s ease;
+    transition: 0.43s ease;
     color: white;
 }
+
+.season {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 50%;
+    padding-top: 30px;
+}
+
+
+
+
+.spring {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 100px;
+    background-color: #f79a49;
+    border-radius: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+}
+
+.spring-icon{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.spring p{
+    font-size: 16px;
+}
+
 
 footer {
     background-color: #1f9346;
