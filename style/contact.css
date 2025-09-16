@@ -74,7 +74,7 @@ main {
 }
 
 main h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: #1f9346;
 }
 
@@ -83,114 +83,162 @@ main .p {
     color: #629774;
 }
 
-
-
-.last-main {
+.conti {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 350px;
-    width: 90%;
-    gap: 10px;
-    background: linear-gradient(135deg, #f89c23, #f68f36);
-    margin-bottom: 20px;
-    margin-left: 80px;
-    border-radius: 20px;
-    font-size: 24px;
-    color: white;
-
-    transition: 0.5s ease;
-
-
-}
-
-.footer-icon {
-    display: inline-block;
-    font-size: 50px;
-    color: white;
-    animation: leafMove 2s infinite ease-in-out;
-}
-
-@keyframes leafMove {
-    0% {
-        transform: rotate(0deg) translateY(0);
-    }
-
-    25% {
-        transform: rotate(-15deg) translateY(-5px);
-    }
-
-    50% {
-        transform: rotate(0deg) translateY(0);
-    }
-
-    75% {
-        transform: rotate(15deg) translateY(-5px);
-    }
-
-    100% {
-        transform: rotate(0deg) translateY(0);
-    }
-}
-
-.last-main a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 150px;
-    background-color: white;
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 20px;
-    color: black;
-}
-
-
-
-.last-main a:hover {
-    background-color: orange;
-    transition: 0.43s ease;
-    color: white;
-}
-
-.season {
-    display: flex;
+    align-items: flex-start;
     gap: 20px;
     width: 100%;
-    height: 50%;
-    padding-top: 30px;
 }
 
-
-
-
-.spring {
+.contact-form {
     display: flex;
-    text-align: center;
-    justify-content: center;
     flex-direction: column;
-    width: 400px;
-    height: 100px;
-    background-color: #f79a49;
-    border-radius: 20px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease;
+    gap: 30px;
+    width: 50%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 755px;
+    border: 1px solid #d6f5d6;
 }
 
-.spring-icon{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.contact-form h2 {
+    color: #1f9346;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
     width: 100%;
-    font-size: 20px;
-    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
-.spring p{
-    font-size: 16px;
+.contact-form textarea {
+    height: 100px;
+    resize: none;
 }
+
+.infor {
+    width: 45%;
+    color: #1f9346;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.card {
+    background: #fff;
+    border: 1px solid #d6f5d6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #1b7a1b;
+}
+
+.card h3 i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.card small {
+    color: #f55c47;
+    font-size: 13px;
+}
+
+/* Icon colors */
+.location-icon {
+    color: #28a745;
+}
+
+.phone-icon {
+    color: #ff9800;
+}
+
+.email-icon {
+    color: #4caf50;
+}
+
+.hours-icon {
+    color: #ff5722;
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1f9346;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: orange;
+}
+
+.infor {
+    color: white;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 96%;
+    height: 400px;
+    margin-left: 32px ;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-image: url('../images/map.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 755px;
+    gap: 20px;
+    border: 1px solid #d6f5d6;
+}
+
+.map h2 {
+    color: #1f9346;
+    padding-top: 20px;
+}
+
+iframe {
+    border: none;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d6f5d6;
+}
+
+
+
 
 
 footer {
@@ -208,6 +256,7 @@ footer {
     gap: 20px;
     font-size: 18px;
     padding-top: 40px;
+    
     color: black;
     border-bottom: 1px solid #3ca15e;
 }
@@ -314,3 +363,4 @@ footer {
     padding-top: 30px;
 
 }
+
