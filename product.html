@@ -17,7 +17,10 @@
             <img src="/img/logo.png" alt="Logo">
             <h1>Fresh Cambodia Roots</h1>
         </div>
-        <div class="menu">
+        <div class="menu-icon" id="menuToggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="menu" id="menu">
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/province.html">Province</a></li>
@@ -26,7 +29,7 @@
                 <li><a href="/fruits.html">Fruits</a></li>
                 <li><a href="/contact.html">Contact Us</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <h1>Fresh Products</h1>
@@ -333,7 +336,7 @@
                     style="width: 180px; height: 23px; border: 1px solid rgba(128, 128, 128, 0.459); border-radius: 10px; text-align: center; font-size: 16px; padding-top: 2px;">
                     Local Specialty
                 </p>
-                <p style="color: #82ac8f;">Premium cashew nuts harvested from Preah Vihear</p>
+                <p style="color: #82ac8f;">Premium cashew nuts harvested</p>
 
                 <div class="top-first">
                     <i class="ri-map-pin-line"></i>
@@ -1375,7 +1378,7 @@
         <i  class="ri-leaf-line "></i>
         <h3>Can't find what you're looking for?</h3>
         <p>Contact us for special orders and seasonal products from any province</p>
-        <a href="/contact us">Contact Us</a>
+        <a href="/contact.html">Contact Us</a>
     </main>
     <footer>
         <div class="footer-top">
@@ -1426,6 +1429,18 @@
             <p>© 2024 Fresh Cambodia Roots. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
 </body>
 
 </html>

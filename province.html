@@ -17,7 +17,10 @@
             <img src="/img/logo.png" alt="Logo">
             <h1>Fresh Cambodia Roots</h1>
         </div>
-        <div class="menu">
+        <div class="menu-icon" id="menuToggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="menu" id="menu">
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a style="color: green;" href="#">Province</a></li>
@@ -26,7 +29,7 @@
                 <li><a href="/fruits.html">Fruits</a></li>
                 <li><a href="/contact.html">Contact Us</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <h1>25 Provinces of Cambodia</h1>
@@ -1125,6 +1128,18 @@
             <p>© 2024 Fresh Cambodia Roots. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
 </body>
 
 </html>

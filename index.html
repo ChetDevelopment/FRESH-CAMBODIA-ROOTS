@@ -7,9 +7,7 @@
     <title>Fresh Cambodia Roots</title>
     <link rel="stylesheet" href="/style/index.css">
     <link rel="icon" type="image/png" href="/img/logo.png">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
 </head>
 
@@ -19,7 +17,11 @@
             <img src="/img/logo.png" alt="Logo">
             <h1>Fresh Cambodia Roots</h1>
         </div>
-        <div class="menu">
+        <div class="menu-icon" id="menuToggle">
+            <i class="ri-menu-line"></i>
+        </div>
+
+        <nav class="menu" id="menu">
             <ul>
                 <li><a style="color: green;" href="#">Home</a></li>
                 <li><a href="/province.html">Province</a></li>
@@ -28,7 +30,8 @@
                 <li><a href="/fruits.html">Fruits</a></li>
                 <li><a href="/contact.html">Contact Us</a></li>
             </ul>
-        </div>
+        </nav>
+
     </header>
     <main>
         <section class="section1">
@@ -84,8 +87,9 @@
             <div class="footer-top1">
                 <h3>Fresh Cambodia Roots</h3>
                 <p>Your trusted source for fresh vegetables and <br>
-                     fruits from all 25 provinces of Cambodia.
-                <br> Supporting local farmers and bringing <br> nature's best to your table.</p>
+                    fruits from all 25 provinces of Cambodia.
+                    <br> Supporting local farmers and bringing <br> nature's best to your table.
+                </p>
             </div>
             <div class="footer-top2">
                 <h3>Quick Links</h3>
@@ -98,7 +102,7 @@
             <div class="footer-top3">
                 <h3>Contact Us</h3>
                 <div class="phone">
-                    <i style="color: orange;"  class="ri-phone-line"></i>
+                    <i style="color: orange;" class="ri-phone-line"></i>
                     <p>+855 97 242 6374</p>
                 </div>
                 <div class="phone">
@@ -106,7 +110,7 @@
                     <p>info@freshkhmeroots.org</p>
                 </div>
                 <div class="phone">
-                    <i style="color: orange;"  class="ri-map-pin-line"></i>
+                    <i style="color: orange;" class="ri-map-pin-line"></i>
                     <p>Phreah Vihear, Cambodia</p>
                 </div>
 
@@ -114,17 +118,30 @@
             <div class="footer-top4">
                 <h3>Follow Us</h3>
                 <div class="socail">
-                     <i class="ri-facebook-fill"></i>
+                    <i class="ri-facebook-fill"></i>
                     <i class="ri-instagram-line"></i>
-                   
+
                 </div>
-                <p style="color: #cce4d4; font-size: 13px; font-weight: normal;">Get updates on seasonal products and special offers</p>
+                <p style="color: #cce4d4; font-size: 13px; font-weight: normal;">Get updates on seasonal products and
+                    special offers</p>
             </div>
         </div>
         <div class="footer-btm">
             <p>© 2024 Fresh Cambodia Roots. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
 </body>
 
 </html>

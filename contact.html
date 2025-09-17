@@ -17,7 +17,10 @@
             <img src="/img/logo.png" alt="Logo">
             <h1>Fresh Cambodia Roots</h1>
         </div>
-        <div class="menu">
+        <div class="menu-icon" id="menuToggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="menu" id="menu">
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/province.html">Province</a></li>
@@ -26,7 +29,7 @@
                 <li><a href="/fruits.html">Fruits</a></li>
                 <li><a style="color: green;" href="#">Contact Us</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <h1>Contact Us</h1>
@@ -95,7 +98,10 @@
 
     <div class="map">
         <h2>Find Us on the Map</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59448.80426560025!2d104.85196695865865!3d11.554548061422656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109512ca41d4455%3A0x92c5c2943fd50d48!2sCentral%20Market!5e1!3m2!1sen!2skh!4v1758028366588!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59448.80426560025!2d104.85196695865865!3d11.554548061422656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109512ca41d4455%3A0x92c5c2943fd50d48!2sCentral%20Market!5e1!3m2!1sen!2skh!4v1758028366588!5m2!1sen!2skh"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <footer>
@@ -147,6 +153,18 @@
             <p>© 2024 Fresh Cambodia Roots. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
 </body>
 
 </html>
